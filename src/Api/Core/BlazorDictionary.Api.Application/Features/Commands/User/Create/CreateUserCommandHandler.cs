@@ -34,6 +34,8 @@ namespace BlazorDictionary.Api.Application.Features.Commands.User.Create
 
             var dbUser = _mapper.Map<Domain.Models.User>(request);
 
+            dbUser.Password = PasswordEncryptor.Encrpt(request.Password);
+
             var rows = await _userRepository.AddAsync(dbUser);
 
             //Email Changed/Created

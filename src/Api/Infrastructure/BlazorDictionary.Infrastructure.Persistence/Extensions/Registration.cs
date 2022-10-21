@@ -31,6 +31,8 @@ namespace BlazorDictionary.Infrastructure.Persistence.Extensions
 
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IEntryRepository, EntryRepository>();
+            services.AddScoped<IEntryCommentRepository, EntryCommentRepository>();
+            services.AddScoped<IEmailConfirmationRepository, EmailConfirmationRepository>();
             return services;
         }
     }

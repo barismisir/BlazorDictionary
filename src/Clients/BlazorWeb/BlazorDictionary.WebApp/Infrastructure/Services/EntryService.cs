@@ -36,6 +36,13 @@ namespace BlazorDictionary.WebApp.Infrastructure.Services
             return response;
         }
 
+        public async Task<PagedViewModel<GetEntryDetailViewModel>> GetProfilePageEntries(int page, int pageSize, string userName)
+        {
+            var response = await _client.GetFromJsonAsync<PagedViewModel<GetEntryDetailViewModel>>($"/api/entry/userentries?userName={userName}&userId={null}&page={page}&pageSize={pageSize}");
+
+            return response;
+        }
+
         public async Task<PagedViewModel<GetEntryDetailViewModel>> GetUserEntries(string userName, Guid userId, int page, int pageSize)
         {
             var response = await _client.GetFromJsonAsync<PagedViewModel<GetEntryDetailViewModel>>($"/api/entry/userentries?userName={userName}&userId={userId}&page={page}&pageSize={pageSize}");

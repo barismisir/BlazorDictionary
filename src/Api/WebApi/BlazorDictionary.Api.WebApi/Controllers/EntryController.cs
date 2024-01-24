@@ -32,7 +32,7 @@ namespace BlazorDictionary.Api.WebApi.Controllers
             return Ok(result);
         }
 
-        [HttpGet("/Comments/{id}")]
+        [HttpGet("Comments/{id}")]
         public async Task<IActionResult> GetEntryComments(Guid id,int page,int pageSize)
         {
             var result = await _mediator.Send(new GetEntryCommentsQuery(page,pageSize,id,UserId));
@@ -42,7 +42,7 @@ namespace BlazorDictionary.Api.WebApi.Controllers
 
         [HttpGet("UserEntries")]
         [Authorize]
-        public async Task<IActionResult> GetUserEntries(string userName, Guid userId, int page,int pageSize)
+        public async Task<IActionResult> GetUserEntries(string? userName, Guid? userId, int page,int pageSize)
         {
             if (userId == Guid.Empty && string.IsNullOrEmpty(userName))
                 userId = UserId.Value;

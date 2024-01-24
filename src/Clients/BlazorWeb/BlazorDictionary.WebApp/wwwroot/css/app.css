@@ -12,38 +12,39 @@ a, .btn-link {
     color: #0071c1;
 }
 
-a{
-    text-decoration:none;
-    color:#bdbdbd;
-    font-size:14px;
-}
-a:hover, a:focus, a:active{
-    text-decoration:none;
+a {
+    text-decoration: none;
+    color: #bdbdbd;
+    font-size: 14px;
 }
 
-input:not([type="button"]).form-control{
-    background-color:#474747;
-    color:white;
-    border-color:white;
+    a:hover, a:focus, a:active {
+        text-decoration: none;
+    }
+
+input:not([type="button"]).form-control {
+    background-color: #474747;
+    color: white;
+    border-color: white;
 }
 
-label{
-    color:#bdbdbd;
+label {
+    color: #bdbdbd;
 }
 
 .btn-succes.btn-dictionary {
     color: white;
     background-color: #68a138;
     border-color: #3e6121;
-    font-size:13px;
+    font-size: 13px;
 }
 
-.btn-succes.btn-dictionary:hover {
-    background-color: #5c8e31;
-}
+    .btn-succes.btn-dictionary:hover {
+        background-color: #5c8e31;
+    }
 
     .btn-succes.btn-dictionary:active {
-        box-shadow:none;
+        box-shadow: none;
     }
 
 .btn-primary {
@@ -52,12 +53,12 @@ label{
     border-color: #1861ac;
 }
 
-.article.content{
-    padding:1px 1px 1px 1px;
+.article.content {
+    padding: 1px 1px 1px 1px;
 }
 
-.content{
-    padding:1px 1px 1px 1px;
+.content {
+    padding: 1px 1px 1px 1px;
 }
 
 .valid.modified:not([type=checkbox]) {
@@ -72,82 +73,83 @@ label{
     color: red;
 }
 
-.list-group{
-    margin-right:5px;
+.list-group {
+    margin-right: 5px;
 }
 
 .list-group-item {
-    background-color:#2d2d2d;
-    color:#bdbdbd;
-    padding:8px 10px 8px 2px;
-}
-
-.list-group-item a{
+    background-color: #2d2d2d;
     color: #bdbdbd;
-    font-size:14px;
+    padding: 8px 10px 8px 2px;
 }
 
-.list-group-item:hover {
-    background-color: #1f1f1f;
-    text-decoration-color: none;
+    .list-group-item a {
+        color: #bdbdbd;
+        font-size: 14px;
+    }
+
+    .list-group-item:hover {
+        background-color: #1f1f1f;
+        text-decoration-color: none;
+    }
+
+.entry-subject {
+    color: #bdbdbd;
 }
 
-.entry-subject{
-    color:#bdbdbd;
-}
-
-.entry-content{
-    color:#bdbdbd;
-    font-size:16px;
+.entry-content {
+    color: #bdbdbd;
+    font-size: 16px;
 }
 
 .entry-author {
     color: #53a245;
     font-size: 13px;
+    background-color: #2d2d2d;
 }
 
-.entry-author a{
-    color: #53a245;
-    background-color:#2d2d2d;
+    .entry-author a {
+        color: #53a245;
+        background-color: #2d2d2d;
+    }
+
+        .entry-author a:hover {
+            text-decoration: underline
+        }
+
+.entry-date {
+    color: #bdbdbd;
+    font-size: 12px;
+    background-color: #2d2d2d;
 }
 
-.entry-author a:hover{
-    text-decoration:underline
-}
+    .entry-date a {
+        color: #666666;
+        background-color: #2d2d2d;
+    }
 
-.entry-date{
-    color:#bdbdbd;
-    font-size:12px;
-    background-color:#2d2d2d;
-}
+        .entry-date a:focus {
+            cursor: auto;
+            text-decoration: none
+        }
 
-.entry-date a{
-    color:#666666;
-    background-color:#2d2d2d;
-}
-
-.entry-date a:focus{
-    cursor:auto;
-    text-decoration:none
-}
-
-.entry-vote{
-    cursor:pointer
+.entry-vote {
+    cursor: pointer
 }
 
 
 .entry-fav {
-    font-size:14px;
-    cursor:pointer;
-}
-
-.entry-fav span:hover, span:focus, span:active {
-    text-decoration:none;
+    font-size: 14px;
     cursor: pointer;
 }
 
-entry-faved span{
-    color:#53a245
+    .entry-fav span:hover, span:focus, span:active {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+entry-faved span {
+    color: #53a245
 }
 
 entry-not-faved {
@@ -155,36 +157,40 @@ entry-not-faved {
 }
 
 entry-comment-add-container {
-    background-color:#1c1c1c !important;
-    padding:25px 20px 20px 20px;
+    background-color: #1c1c1c !important;
+    padding: 25px 20px 20px 20px;
 }
 
 entry-comment-add {
-    width:100%;
-    background-color:#1c1c1c !important
+    width: 100%;
+    background-color: #1c1c1c !important
 }
 
 entry-comment-actions {
-    padding:25px 15px 15px 15px
+    padding: 25px 15px 15px 15px
 }
 
 entry-comment-textarea {
-    background-color:#494949;
-    width:100%;
-    color:white;
-    height:250px;
-    border-color:#494949;
-    border-radius:3px;
-    outline:none !important;
+    background-color: #494949;
+    width: 100%;
+    color: white;
+    height: 250px;
+    border-color: #494949;
+    border-radius: 3px;
+    outline: none !important;
 }
 
-.card-body{
-    background-color:#2d2d2d;
-    padding:5px;
+.card .container {
+    background-color: #2d2d2d;
 }
 
-.card-text{
-    color:#bdbdbd
+.card-body {
+    background-color: #2d2d2d;
+    padding: 5px;
+}
+
+.card-text {
+    color: #bdbdbd
 }
 
 

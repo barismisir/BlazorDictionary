@@ -21,6 +21,9 @@ namespace BlazorDictionary.Api.Application.Mapping
 
             CreateMap<UpdateUserCommand, User>();
 
+            CreateMap<UserDetailViewModel, User>()
+                .ReverseMap();
+
             CreateMap<CreateEntryCommand, Entry>()
                 .ReverseMap();
 

@@ -25,7 +25,7 @@ namespace BlazorDictionary.Api.Application.Features.Queries.GetUserDetail
         {
             Domain.Models.User dbUser = null;
 
-            if (request.UserId.HasValue)
+            if (request.UserId != Guid.Empty)
                 dbUser = await _userRepository.GetByIdAsync(request.UserId.Value);
             else if (!string.IsNullOrEmpty(request.UserName))
                 dbUser = await _userRepository.GetSingleAsync(s => s.UserName == request.UserName);

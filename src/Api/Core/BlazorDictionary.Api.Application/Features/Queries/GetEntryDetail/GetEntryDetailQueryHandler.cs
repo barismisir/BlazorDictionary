@@ -34,6 +34,7 @@ namespace BlazorDictionary.Api.Application.Features.Queries.GetEntryDetail
             var list = query.Select(i => new GetEntryDetailViewModel()
             {
                 Id = i.Id,
+                Subject = i.Subject,
                 Content = i.Content,
                 IsFavorited = request.UserId.HasValue && i.EntryFavorites.Any(a => a.CreatedById == request.UserId),
                 FavoritedCount = i.EntryFavorites.Count,

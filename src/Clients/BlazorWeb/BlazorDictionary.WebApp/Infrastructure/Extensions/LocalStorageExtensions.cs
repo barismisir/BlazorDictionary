@@ -32,6 +32,11 @@ namespace BlazorDictionary.WebApp.Infrastructure.Extensions
         {
             return localStorageService.GetItem<Guid>(UserId);
         }
+
+        public static async Task<Guid> GetUserId(this ILocalStorageService localStorageService)
+        {
+            return await localStorageService.GetItemAsync<Guid>(UserId);
+        }
         public static void SetUserId(this ISyncLocalStorageService localStorageService, Guid value)
         {
             localStorageService.SetItem(UserId, value);
